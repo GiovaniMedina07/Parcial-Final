@@ -1,0 +1,118 @@
+/*selector nivel superior*/
+:root{
+    --color-primary:#093A3E;
+    --color-Primary-dark:#001011;
+
+    --color-secondary: #64E9EE;
+    --color-secondary-dark: #3AAFB9;
+
+    --color-gray-light: #f1f1f1;
+    --color-gray: #ccc;
+    --color-gray-dark: #333;
+}
+*{
+   box-sizing: border-box;    
+}
+/*cuerpo de la pagina*/
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, sans-serif;
+}
+/*imagenes de la pagina*/
+img{
+    border-radius: 10px;
+}
+/*header*/
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url("https://certitec.eu/wp-content/uploads/2023/03/OOT.jpg");
+}
+header h1{
+
+    font-size: 40px;
+    margin: 0,0,20px;
+
+}
+header p{
+
+    margin: 0,0,10px;
+}
+header div{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/*barra de navegacion*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+.navbar a:hover{
+    background-color: var(--color-Primary-dark);
+}
+/*response*/
+@media screen and (max-width: 700px){
+    .navbar,.row {
+        
+        flex-direction: column;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}   
+aside{
+    justify-content: center;
+    flex: 20%;
+    padding: 20px;
+    background-color: var(--color-gray-light);
+}
+.main{
+    flex: 50%;
+}
+.img{
+
+    margin-top: 25px;
+
+}
+.parrafos{
+
+    justify-content: center;
+    flex: 20%;
+    padding: 20px;
+    background-color: var(--color-gray-light);
+    
+
+}
+.centro {
+    padding-top: 50px;   
+   border-top: #001011;
+
+}
+.footer{
+
+    padding-top: 1000px;
+
+
+}
+.centro1{
+
+
+    padding: 50px;
+}
